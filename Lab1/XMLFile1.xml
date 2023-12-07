@@ -1,0 +1,131 @@
+<?xml version = "1.0" encoding="utf-8" ?>
+
+<Cadres>
+<Cadr>
+	<Fullname>Петренко Ольга Михайлівна</Fullname>
+<Facultyinformation>
+	<NameOfFac>Факультет медицини</NameOfFac>
+	<Department>Терапія</Department>
+</Facultyinformation>
+    <Chair>Кафедра внутрішніх хвороб</Chair>
+    <TypeOfeducation>Аспірантура</TypeOfeducation>
+	<EducInstitution>Національний медичний університет імені О.О. Богомольця</EducInstitution>
+	<StartDate>01.09.2019</StartDate>
+	<FinalDate>28.06.2022</FinalDate>
+</Cadr>
+<Cadr>
+	<Fullname>Іваненко Марія Вікторівна</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Факультет філології</NameOfFac>
+		<Department>Англійська філологія</Department>
+	</Facultyinformation>
+    <Chair>Кафедра літератури англомовних країн</Chair>
+    <TypeOfeducation>Базова</TypeOfeducation>
+	<EducInstitution>Київський національний університет імені Тараса Шевченка</EducInstitution>
+	<StartDate>01.09.2015</StartDate>
+	<FinalDate>30.06.2019</FinalDate>
+</Cadr>
+
+<Cadr>
+	<Fullname>Литвин Олександр Володимирович</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Факультет прикладної математики</NameOfFac>
+		<Department>Комп'ютерні науки</Department>
+	</Facultyinformation>
+    <Chair>Кафедра математичної інформатики</Chair>
+    <TypeOfeducation>Додаткова</TypeOfeducation>
+	<EducInstitution>Харківський національний університет імені В.Н. Каразіна</EducInstitution>
+	<StartDate>01.09.2016</StartDate>
+	<FinalDate>30.06.2020</FinalDate>
+</Cadr>
+
+<Cadr>
+	<Fullname>Коваль Ольга Сергіївна</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Факультет права</NameOfFac>
+		<Department>Кримінальне право</Department>
+	</Facultyinformation>
+    <Chair>Кафедра кримінального права</Chair>
+    <TypeOfeducation>Докторантура</TypeOfeducation>
+	<EducInstitution>Національний університет "Києво-Могилянська академія"</EducInstitution>
+	<StartDate>01.09.2017</StartDate>
+	<FinalDate>30.06.2022</FinalDate>
+</Cadr>
+
+<Cadr>
+	<Fullname>Сидоров Ігор Петрович</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Інститут фізики та техніки</NameOfFac>
+		<Department>Теоретична фізика</Department>
+	</Facultyinformation>
+    <Chair>Кафедра теоретичної фізики</Chair>
+    <TypeOfeducation>Додаткова</TypeOfeducation>
+	<EducInstitution>Київський національний університет імені Тараса Шевченка</EducInstitution>
+	<StartDate>01.09.2018</StartDate>
+	<FinalDate>30.06.2022</FinalDate>
+</Cadr>
+
+<Cadr>
+	<Fullname>Петренко Ігор Олександрович</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Факультет економіки</NameOfFac>
+		<Department>Міжнародна економіка</Department>
+	</Facultyinformation>
+    <Chair>Кафедра міжнародної економіки</Chair>
+    <TypeOfeducation>Додаткова</TypeOfeducation>
+	<EducInstitution>Національний університет "Києво-Могилянська академія"</EducInstitution>
+	<StartDate>01.09.2016</StartDate>
+	<FinalDate>30.06.2020</FinalDate>
+</Cadr>
+
+<Cadr>
+	<Fullname>Михайленко Андрій Віталійович</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Факультет інформаційних технологій</NameOfFac>
+		<Department>Системне програмування</Department>
+	</Facultyinformation>
+    <Chair>Кафедра системного програмування</Chair>
+    <TypeOfeducation>Додаткова</TypeOfeducation>
+	<EducInstitution>Київський політехнічний інститут</EducInstitution>
+	<StartDate>01.09.2017</StartDate>
+	<FinalDate>30.06.2021</FinalDate>
+</Cadr>
+<Cadr>
+	<Fullname>Коваль Юрій Ігорович</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Факультет комп'ютерних наук</NameOfFac>
+		<Department>Системний аналіз</Department>
+	</Facultyinformation>
+    <Chair>Кафедра системного аналізу</Chair>
+    <TypeOfeducation>Базова</TypeOfeducation>
+	<EducInstitution>Київський національний університет імені Тараса Шевченка</EducInstitution>
+	<StartDate>01.09.2018</StartDate>
+	<FinalDate>30.06.2022</FinalDate>
+</Cadr>
+<Cadr>
+	<Fullname>Козлова Наталія Володимирівна</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Хімічний факультет</NameOfFac>
+		<Department>Органічна хімія</Department>
+	</Facultyinformation>
+    <Chair>Кафедра органічної хімії</Chair>
+    <TypeOfeducation>Аспірантура</TypeOfeducation>
+	<EducInstitution>Харківський національний університет імені В.Н. Каразіна</EducInstitution>
+	<StartDate>01.09.2017</StartDate>
+	<FinalDate>30.06.2021</FinalDate>
+</Cadr>
+
+<Cadr>
+	<Fullname>Павленко Олександр Андрійович</Fullname>
+	<Facultyinformation>
+		<NameOfFac>Біологічний факультет</NameOfFac>
+		<Department>Зоологія</Department>
+	</Facultyinformation>
+    <Chair>Кафедра зоології та екології</Chair>
+    <TypeOfeducation>Додаткова</TypeOfeducation>
+	<EducInstitution>Тернопільський національний педагогічний університет імені Володимира Гнатюка</EducInstitution>
+	<StartDate>01.09.2016</StartDate>
+	<FinalDate>30.06.2020</FinalDate>
+</Cadr>
+
+</Cadres>

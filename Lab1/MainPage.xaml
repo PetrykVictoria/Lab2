@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab1.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Label Text="@vkptrk"  TextColor="LightGray"/>
+            <Button Text="Close" Clicked="CloseButtonClicked" HorizontalOptions="EndAndExpand" Margin="5,5,5,5" FontAttributes="Bold" BackgroundColor="#ec807f" BorderColor="Black" TextColor="Black" />
+            <Grid Margin="10,10,10,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75" />
+                    <RowDefinition Height="75" />
+                    <RowDefinition Height="75" />
+                    <RowDefinition Height="75" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <CheckBox x:Name="FullNameBox" CheckedChanged="FullNameBox_CheckedChanged" Grid.Column="0" Grid.Row="0"/>
+                <Entry x:Name="FullNameEntry" Placeholder="FullName" IsEnabled="False" Grid.Column="1" Grid.Row="0" HeightRequest="25"/>
+                <CheckBox x:Name="TypeOfEducBox"  CheckedChanged="TypeOfEducBox_CheckedChanged" Grid.Column="3" Grid.Row="0"/>
+                <Picker x:Name="TypeOfEducPicker" Title="Type Of Education" IsEnabled="False" Grid.Column="4" Grid.Row="0"/>
+
+                <CheckBox x:Name="NameOfFacBox"  CheckedChanged="NameOfFacBox_CheckedChanged" Grid.Column="0" Grid.Row="1"/>
+                <Picker x:Name="NameOfFacPicker" Title="Faculty" IsEnabled="False" Grid.Column="1" Grid.Row="1"/>
+                <CheckBox x:Name="EducInstitutionBox"  CheckedChanged="EducInstitutionBox_CheckedChanged" Grid.Column="3" Grid.Row="1"/>
+                <Picker x:Name="EducInstitutionPicker" Title="Education Institution" IsEnabled="False" Grid.Column="4" Grid.Row="1"/>
+
+                <CheckBox x:Name="DepartmentBox"  CheckedChanged="DepartmentBox_CheckedChanged" Grid.Column="0" Grid.Row="2"/>
+                <Picker x:Name="DepartmentPicker" Title="Department" IsEnabled="False" Grid.Column="1" Grid.Row="2"/>
+                <CheckBox x:Name="StartDateBox"  CheckedChanged="StartDateBox_CheckedChanged" Grid.Column="3" Grid.Row="2"/>
+                <Picker x:Name="StartDatePicker" Title="Start Date" IsEnabled="False" Grid.Column="4" Grid.Row="2"/>
+
+                <CheckBox x:Name="ChairBox"  CheckedChanged="ChairBox_CheckedChanged" Grid.Column="0" Grid.Row="3"/>
+                <Picker x:Name="ChairPicker" Title="Chair" IsEnabled="False" Grid.Column="1" Grid.Row="3"/>
+                <CheckBox x:Name="FinalDateBox"  CheckedChanged="FinalDateBox_CheckedChanged" Grid.Column="3" Grid.Row="3"/>
+                <Picker x:Name="FinalDatePicker" Title="Final Date" IsEnabled="False" Grid.Column="4" Grid.Row="3"/>
+
+                <Label x:Name="header" Text="Choose a method" FontSize="17" Grid.Column="6" Grid.Row="0" VerticalOptions="Center"/>
+                <RadioButton GroupName="searches" Content="LINQ" x:Name="SearchLINQ" FontSize="15" Grid.Column="6" Grid.Row="1"/>
+                <RadioButton GroupName="searches" Content="DOM" x:Name="SearchDOM" FontSize="15" Grid.Column="6" Grid.Row="2"/>
+                <RadioButton GroupName="searches" Content="SAX" x:Name="SearchSAX" FontSize="15" Grid.Column="6" Grid.Row="3"/>
+
+                <Button x:Name="ChooseFileButton" Text="Choose file" Clicked="ChooseFileButton_Clicked" Grid.Column="8" Grid.Row="0" HeightRequest="65" FontAttributes="Bold" BorderColor="Black" BackgroundColor="#d888ed" TextColor="Black"/>
+                <Button x:Name="SearchButton" Text="Search" Grid.Column="8" Grid.Row="1" HeightRequest="65" FontAttributes="Bold" BorderColor="Black" BackgroundColor="#d888ed" TextColor="Black" Clicked="SearchButton_Clicked"/>
+                <Button Text="Transform to HTML" Clicked="Transformation_Clicked" Grid.Column="8" Grid.Row="2" FontAttributes="Bold" HeightRequest="65" BorderColor="Black" BackgroundColor="#d888ed" TextColor="Black"/>
+                <Button x:Name="ClearButton" Text="Clear" Clicked="ClearButton_Clicked" Grid.Column="8" Grid.Row="3" HeightRequest="65" FontAttributes="Bold" BorderColor="Black" BackgroundColor="#d888ed" TextColor="Black"/>
+            </Grid>
+
+            <CollectionView x:Name="SearchResultsCollectionView" Grid.Row="2" Grid.ColumnSpan="8" Margin="10,10,10,10">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="3" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="#f5cefd" BorderColor="Black" CornerRadius="10" Margin="10">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                                    <Label Text="П.І.Б: " FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Fullname}" FontSize="16"/>
+                                </StackLayout>
+                                
+                                <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                                    <Label Text="Тип освіти: " FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding TypeOfeducation}" FontSize="16"/>
+                                </StackLayout>
+                                
+                                <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                                    <Label Text="Назва факультету: " FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding NameOfFac}" FontSize="16"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                                    <Label Text="Відділення: " FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Department}" FontSize="16"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                                    <Label Text="Кафедра: " FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Chair}" FontSize="16"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Vertical" Margin="0,5,0,0">
+                                    <Label Text="Навчальний заклад: " FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding EducInstitution}" FontSize="16" LineBreakMode="WordWrap"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                                    <Label Text="Дата початку: " FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding StartDate}" FontSize="16"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                                    <Label Text="Дата закінчення: " FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding FinalDate}" FontSize="16"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
